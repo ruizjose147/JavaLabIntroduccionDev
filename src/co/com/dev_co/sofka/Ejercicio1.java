@@ -12,14 +12,14 @@ public class Ejercicio1 {
 
         if(num1 > num2)
             System.out.println(num1+ " es mayor que " + num2);
-        if(num1 < num2)
+        else if (num1 < num2)
             System.out.println(num2+ " es mayor que " + num1);
-        if(num1 == num2)
+        else
             System.out.println(num1 + " Es igual a " + num2);
     }
 
     public static void main(String[] args) {
         Ejercicio1 ejercicio1 = new Ejercicio1();
-        ejercicio1.numeroMayor(10, 100);
+        ejercicio1.numeroMayor(100, 10);
     }
 }
