@@ -1,16 +1,0 @@
-
-S	java:S106"9Replace this use of System.out or System.err by a logger.(é–Œûÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(îªÎÙ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(‰å–Éúÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Å…¦ıÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ê†
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¨÷°áşÿÿÿÿ
-S	java:S106 "9Replace this use of System.out or System.err by a logger.(ìÑ’Æùÿÿÿÿ
-S	java:S106#"9Replace this use of System.out or System.err by a logger.(ÀÔ°Èıÿÿÿÿ
-S	java:S106&"9Replace this use of System.out or System.err by a logger.(÷ä¥àûÿÿÿÿ
-[
-java:S1128"9Remove this unused import 'com.sun.source.tree.CaseTree'.(¯ñ‚¸ûÿÿÿÿ8±Û÷Ùî/
-O
-java:S1128"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8±Û÷Ùî/
-P
-java:S1191"5Use classes from the Java API instead of Sun classes.(¯ñ‚¸ûÿÿÿÿ

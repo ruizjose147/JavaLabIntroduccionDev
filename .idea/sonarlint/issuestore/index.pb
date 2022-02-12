@@ -13,5 +13,3 @@ W
 'src/co/com/dev_co/sofka/Ejercicio6.java,9\a\9a10c7169ddaa1b84571995192bc130c21168d88
 W
 'src/co/com/dev_co/sofka/Ejercicio7.java,4\6\46037532a56a851ec313c855ffdbd5a849f5c6f7
-W
-'src/co/com/dev_co/sofka/Ejercicio8.java,8\e\8e4ba4450dbefc3df529f17b1a8fc8cf0bf2a347
