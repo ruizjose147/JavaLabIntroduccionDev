@@ -7,7 +7,7 @@ public class Ejercicio15 {
     public void mostrarMenu(){
 
         Scanner scanner = new Scanner(System.in);
-        int opcion = 0;
+        int opcion = -1;
         while (opcion != 8) {
             try {
                 System.out.println("******GESTION CINEMATOGRÁFICA******");
