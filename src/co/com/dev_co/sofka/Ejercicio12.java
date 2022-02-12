@@ -2,6 +2,7 @@ package co.com.dev_co.sofka;
 
 import java.util.Scanner;
 
+// TODO: 12/02/2022 mejorara
 public class Ejercicio12 {
 
     public void compararPalabras(){
