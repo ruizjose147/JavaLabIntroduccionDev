@@ -4,7 +4,7 @@ public class Persona {
     private String nombre;
     private int edad;
     private int DNI;
-    private String sexo;
+    private char sexo;
     private double peso;
     private double altura;
 
@@ -12,14 +12,14 @@ public class Persona {
         this.DNI = generarDNI();
     }
 
-    public Persona(String nombre, int edad, String sexo){
+    public Persona(String nombre, int edad, char sexo){
         this.nombre = nombre;
         this.edad = edad;
         this.sexo = sexo;
         this.DNI = generarDNI();
     }
 
-    public Persona(String nombre, int edad, String sexo, double peso, double altura){
+    public Persona(String nombre, int edad, char sexo, double peso, double altura){
         this.nombre = nombre;
         this.edad = edad;
         this.DNI = generarDNI();
@@ -29,31 +29,52 @@ public class Persona {
     }
 
     public String calcularIMC(){
-        double calculoIMC=(this.peso/Math.pow(this.altura,2));
+        double alturaM = this.altura/100;
+        double calculoIMC=(this.peso/Math.pow(alturaM,2));
+        String resultado = "";
         if(calculoIMC<20){
-            return "Estas en tu peso ideal";
+            resultado = String.valueOf(-1) + " Estas en tu peso ideal";
         }
         else if(calculoIMC>=20 && calculoIMC<=25){
-            return "Estas por debajo de tu peso ideal";
+            resultado= String.valueOf(0) +" Esta por debajo de tu peso ideal";
         }
         else {
-            return "Estas en sobrepeso";
+            resultado=String.valueOf(1) +" Estas sobre tu peso ideal";
+        }
+
+        return resultado;
+    }
+
+    public String esMayorDeEdad(){
+        if(this.edad > 17) {
+            return "Es mayor de Edad";
+        }
+        else {
+            return "Es menor de edad?";
         }
     }
 
-    public Boolean esMayorDeEdad(){
-        boolean mayorDeEdad = true;
-        if(this.edad > 17)
-            mayorDeEdad = true;
-        else
-            mayorDeEdad = false;
-        System.out.println("Es mayor de edad?");
-        return mayorDeEdad;
+    public char solicitarSexo(String sexo){
+        String letra = sexo.toLowerCase();
+        if(letra=="masculino" || letra=="hombre"){
+            sexo="H";
+        }
+        else if(sexo=="femenino" || letra=="mujer") {
+            sexo="M";
+        }
+        else {
+            sexo = sexo;
+        }
+        char sexo1= sexo.charAt(0);
+        return sexo1;
+        /*this.sexo = sexo1;
+        this.compararSexo(this.sexo);*/
     }
 
-    private void comprobarSexo(String sexo){
-        if(sexo != "H" || sexo != "M")
-            this.sexo = "H";
+    private void compararSexo(char sexo){
+        if(sexo != this.sexo){
+            this.sexo = 'H';
+        }
     }
 
     @Override
@@ -67,9 +88,9 @@ public class Persona {
                 "altura: " + altura + "m";
     }
 
-    private int generarDNI(){
+    public int generarDNI(){
         this.DNI = (int) (Math.random()*12345678)+1;
-        return 0;
+        return DNI;
     }
 
     public String getNombre() {
@@ -92,12 +113,12 @@ public class Persona {
         this.edad = edad;
     }
 
-    public String getSexo() {
+    public char getSexo() {
 
         return sexo;
     }
 
-    public void setSexo(String sexo) {
+    public void setSexo(char sexo) {
 
         this.sexo = sexo;
     }
