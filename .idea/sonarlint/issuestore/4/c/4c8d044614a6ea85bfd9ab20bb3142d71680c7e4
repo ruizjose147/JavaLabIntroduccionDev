@@ -1,0 +1,57 @@
+
+N
+java:S1854"8Remove this useless assignment to local variable "sexo".(¿­ˆÖ
+[
+java:S1854C"9Remove this useless assignment to local variable "sexo2".(úÊÌèşÿÿÿÿ8¯–‹ï/
+S	java:S106
+"9Replace this use of System.out or System.err by a logger.(Ø—ö ÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ØÄµÆøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(”•Øãøÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Î–õ’
+J
+java:S1656"/Remove or correct this useless self-assignment.(á«¾Âÿÿÿÿÿ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(ˆ·Ÿµ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(„²º„ùÿÿÿÿ
+N	java:S106("9Replace this use of System.out or System.err by a logger.(–ÒöØ
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(ï¶ø—ùÿÿÿÿ
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(ÓıÒ‹
+S	java:S106."9Replace this use of System.out or System.err by a logger.(òŸ•öúÿÿÿÿ
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(ØÄµÆøÿÿÿÿ
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(”•Øãøÿÿÿÿ
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(Î–õ’
+E
+java:S1656@"/Remove or correct this useless self-assignment.(ÛÎå€
+S	java:S106K"9Replace this use of System.out or System.err by a logger.(ğ®©–úÿÿÿÿ
+S	java:S106L"9Replace this use of System.out or System.err by a logger.(§‹öåüÿÿÿÿ
+N	java:S106M"9Replace this use of System.out or System.err by a logger.(²Ñªš
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(áå¥”øÿÿÿÿ
+S	java:S106Y"9Replace this use of System.out or System.err by a logger.(êà‘ûÿÿÿÿ
+N	java:S106Z"9Replace this use of System.out or System.err by a logger.(¶é±ª
+N	java:S106["9Replace this use of System.out or System.err by a logger.(¦ˆ©
+A
+java:S1128"+Remove this unused import 'java.io.Reader'.(µû¨é
+b
+java:S1192"GDefine a constant instead of duplicating this literal "hombre" 4 times.(¾Îïûÿÿÿÿ
+d
+java:S1192("NDefine a constant instead of duplicating this literal "Calculo IMC: " 3 times.(–ÒöØ
+W
+java:S4973"<Strings and Boxed types should be compared using "equals()".(¾Îïûÿÿÿÿ
+W
+java:S4973"<Strings and Boxed types should be compared using "equals()".(¾Îïûÿÿÿÿ
+R
+java:S4973"<Strings and Boxed types should be compared using "equals()".(ŞåÍä
+R
+java:S4973"<Strings and Boxed types should be compared using "equals()".(ŞåÍä
+W
+java:S49739"<Strings and Boxed types should be compared using "equals()".(â´ä÷şÿÿÿÿ
+W
+java:S49739"<Strings and Boxed types should be compared using "equals()".(â´ä÷şÿÿÿÿ
+W
+java:S4973<"<Strings and Boxed types should be compared using "equals()".(†ÑÑ–úÿÿÿÿ
+W
+java:S4973<"<Strings and Boxed types should be compared using "equals()".(†ÑÑ–úÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²õØ·
+y
+java:S4165@"cRemove this useless assignment; "sexo2" already holds the assigned value along all execution paths.(ÛÎå€
+}
+java:S4165"bRemove this useless assignment; "sexo" already holds the assigned value along all execution paths.(á«¾Âÿÿÿÿÿ

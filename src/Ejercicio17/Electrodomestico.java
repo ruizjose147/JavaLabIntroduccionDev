@@ -1,6 +1,6 @@
 package Ejercicio17;
 
-public class Electrodomestico{
+public class Electrodomestico implements Precio{
 
     private double precioBase = 100;
     private String color = "Blanco";
@@ -48,10 +48,10 @@ public class Electrodomestico{
         }
     }
 
-    public void precioFinal(){
+    @Override
+    public double precioFinal(){
         if(this.consumoEnergetico == 'A')
             this.precioBase += 100;
-
         if(this.consumoEnergetico == 'B')
             this.precioBase += 80;
         if(this.consumoEnergetico == 'C')
@@ -62,6 +62,7 @@ public class Electrodomestico{
             this.precioBase += 30;
         if(this.consumoEnergetico == 'F')
             this.precioBase += 10;
+        return precioBase;
 
         /*int resolucion = 0;
         if (resolucion > 40)

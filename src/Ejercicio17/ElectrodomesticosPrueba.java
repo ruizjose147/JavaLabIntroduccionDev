@@ -17,10 +17,17 @@ public class ElectrodomesticosPrueba {
         electrodomesticos[7] = new Television(60, "negro", 'F', 7, 30,false);
         electrodomesticos[8] = new Lavadora(25,180, "blanco", 'F', 12);
         electrodomesticos[9] = new Television(100, "negro", 'F', 7, 55,false);
+
         System.out.println("Lavadoras");
         for (int i = electrodomesticos.length - 1; i >= 0; i--){
             if(electrodomesticos[i]instanceof Lavadora)
-                electrodomesticos[i].precioFinal();
+                System.out.println(electrodomesticos[i].precioFinal());
+        }
+
+        System.out.println("Televisores");
+        for (int i = electrodomesticos.length - 1; i >= 0; i--){
+            if(electrodomesticos[i]instanceof Television)
+                System.out.println(electrodomesticos[i].precioFinal());
         }
     }
 }
