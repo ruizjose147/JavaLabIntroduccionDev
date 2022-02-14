@@ -1,13 +1,19 @@
 package mx.com.gm.laboratorioJava.ejercicio18;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 public class VideoJuego implements Entregable{
+
 
     public String titulo="";
     public int horasEstimada =10;
     public boolean entregado=false;
     public String genero="";
     public String compañia="";
-
+    public ArrayList lista;
 
     public VideoJuego() {
 
@@ -83,8 +89,17 @@ public class VideoJuego implements Entregable{
         return entregado;
     }
 
-    @Override
-    public void compareTo(Object a) {
 
+    @Override
+    public int compareTo(Object a) {
+        //La serie con más temporadas retornara 1, 0 si son iguales y -1 si es menor :)
+        int res=-1;
+        VideoJuego videoJuego = (VideoJuego) a;
+        if (this.horasEstimada > videoJuego.getHorasEstimada()){
+            res=1;
+        }else if(this.horasEstimada == videoJuego.getHorasEstimada()){
+            res=0;
+        }
+        return res;
     }
 }

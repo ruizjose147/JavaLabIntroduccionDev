@@ -1,0 +1,7 @@
+
+Q	java:S125C"<This block of commented-out lines of code should be removed.(ªçß‹
+U
+java:S1144"?Remove this unused private "comprobarConsumoEnergetico" method.(ÂŸô‹
+H
+java:S1144 "3Remove this unused private "comprobarColor" method.(«îÃ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Š“ñl

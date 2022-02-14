@@ -82,7 +82,16 @@ public class Serie implements Entregable{
     }
 
     @Override
-    public void compareTo(Object a) {
-
+    public int compareTo(Object a) {
+        //La serie con más temporadas retornara 1, 0 si son iguales y -1 si es menor :)
+        int auxRes=-1;
+        Serie miSerie= (Serie) a;
+        if (this.numeroTemporda>miSerie.getNumeroTemporda()){
+            auxRes=1;
+        }
+        else if(this.numeroTemporda == miSerie.getNumeroTemporda()){
+            auxRes=0;
+        }
+        return auxRes;
     }
 }

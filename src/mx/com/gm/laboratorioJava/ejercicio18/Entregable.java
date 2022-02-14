@@ -4,5 +4,5 @@ public interface Entregable {
     void Entregar();
     void devolver();
     boolean IsEntregado();
-    void compareTo(Object a);
+    int compareTo(Object a);
 }
