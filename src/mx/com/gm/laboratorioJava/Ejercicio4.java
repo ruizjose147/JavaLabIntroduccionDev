@@ -12,11 +12,15 @@ public class Ejercicio4 {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Ejercicio4 ejercicio4 = new Ejercicio4();
-        System.out.println("Programa para calcular el valor del producto + Iva");
-        System.out.println("digite el precio del producto:");
-        double precioUsuario = scanner.nextDouble();
-        System.out.println("El total Ivaincluido es de " + ejercicio4.calcularIva(precioUsuario));
+        try{
+            Scanner scanner = new Scanner(System.in);
+            Ejercicio4 ejercicio4 = new Ejercicio4();
+            System.out.println("Programa para calcular el valor del producto + Iva");
+            System.out.println("digite el precio del producto:");
+            double precioUsuario = scanner.nextDouble();
+            System.out.println("El total Ivaincluido es de " + ejercicio4.calcularIva(precioUsuario));
+        }catch (Exception e){
+            System.out.println("Se ingresaron datos invalidos, reinicie la aplicacion.");
+        }
     }
 }

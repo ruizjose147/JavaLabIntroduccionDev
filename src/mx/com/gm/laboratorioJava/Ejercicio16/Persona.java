@@ -1,4 +1,4 @@
-package Ejercicio16;
+package mx.com.gm.laboratorioJava.Ejercicio16;
 
 public class Persona {
     private String nombre;

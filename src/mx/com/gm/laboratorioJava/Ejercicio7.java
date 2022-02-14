@@ -7,13 +7,20 @@ public class Ejercicio7 {
     int numero;
 
     public void pedirNumero(){
-        Scanner scanner = new Scanner(System.in);
+
+
         do {
-            System.out.println("Igresa un numero");
-            this.numero = scanner.nextInt();
-            if (numero >= 0) {
-                System.out.println("Numero ingresado " + numero + ".");
-                break;
+            try{
+                Scanner scanner = new Scanner(System.in);
+
+                System.out.println("Igresa un numero");
+                this.numero = scanner.nextInt();
+                if (numero >= 0) {
+                    System.out.println("Numero ingresado " + numero + ".");
+                    break;
+                }
+            }catch (Exception e){
+                System.out.println("Se ingresaron datos invalidos, reinicie la aplicacion.");
             }
         }while (numero < 0);
     }

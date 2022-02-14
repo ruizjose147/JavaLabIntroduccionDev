@@ -20,14 +20,18 @@ public class Ejercicio2 {
         }
 
         public static void main(String[] args) {
-            Ejercicio2 ejercicio2 = new Ejercicio2();
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Dime dos numero y te dire cual es el mayor");
-            System.out.println("Primer numero");
-            int num1 = scanner.nextInt();
-            System.out.println("Segundo numero");
-            int num2 = scanner.nextInt();
-            ejercicio2.numeroMayor(num1,num2);
 
+            try{
+                Ejercicio2 ejercicio2 = new Ejercicio2();
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Dime dos numero y te dire cual es el mayor");
+                System.out.println("Primer numero");
+                int num1 = scanner.nextInt();
+                System.out.println("Segundo numero");
+                int num2 = scanner.nextInt();
+                ejercicio2.numeroMayor(num1,num2);
+            }catch (Exception e){
+                System.out.println("Se ingresaron datos invalidos, reinicie la aplicacion.");
+            }
         }
     }

@@ -1,6 +1,5 @@
-package Ejercicio16;
+package mx.com.gm.laboratorioJava.Ejercicio16;
 
-import java.io.Reader;
 import java.util.Scanner;
 
 public class PersonaPrueba {

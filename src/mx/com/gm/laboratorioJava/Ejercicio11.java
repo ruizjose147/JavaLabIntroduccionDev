@@ -48,12 +48,18 @@ public class Ejercicio11 {
 
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingresa una frase y te dire su longitud y el numero de vocales");
-        String usuario = scanner.nextLine();
-        Ejercicio11 ejercicio11 = new Ejercicio11();
-        System.out.println("La longitud es de: " + ejercicio11.tamañoCadena(usuario));
-        System.out.println("Contiene " + ejercicio11.cantidadVocales(usuario) + " vocales");
-        ejercicio11.detalleVocales(usuario);
+
+        try{
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Ingresa una frase y te dire su longitud y el numero de vocales");
+            String usuario = scanner.nextLine();
+            Ejercicio11 ejercicio11 = new Ejercicio11();
+            System.out.println("La longitud es de: " + ejercicio11.tamañoCadena(usuario));
+            System.out.println("Contiene " + ejercicio11.cantidadVocales(usuario) + " vocales");
+            ejercicio11.detalleVocales(usuario);
+        }catch (Exception e){
+            System.out.println("Se ingresaron datos invalidos, reinicie la aplicacion.");
+        }
+
     }
 }

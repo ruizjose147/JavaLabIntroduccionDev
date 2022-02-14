@@ -1,6 +1,4 @@
-package Ejercicio17;
-
-import java.util.ArrayList;
+package mx.com.gm.laboratorioJava.Ejercicio17;
 
 public class ElectrodomesticosPrueba {
 
